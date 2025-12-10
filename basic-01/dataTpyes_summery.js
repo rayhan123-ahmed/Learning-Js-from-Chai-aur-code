@@ -14,7 +14,7 @@ let userEmail;
 // symbal
 const id = Symbol("123");
 const anotherId = Symbol("123");
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 // Reference (Non-Primative)
 
@@ -30,11 +30,11 @@ let myObj = {
 };
 
 // function
-const myFunction = function () {
-  console.log("Hello world");
-};
+// const myFunction = function () {
+//   console.log("Hello world");
+// };
 
-console.log(typeof anotherId);
+// console.log(typeof anotherId);
 
 /*Return type of variables in JavaScript
 1) Primitive Datatypes
@@ -50,3 +50,26 @@ console.log(typeof anotherId);
        Arrays  =>  object
        Function  =>  function
        Object  =>  object */
+
+//  **********************Stack and Heap memory in javascript*******************
+
+// Steak (Primative), Heap (Non-Primative)
+
+let myName = "rayhan";
+
+let newNAme = myName;
+newNAme = "Rifat";
+
+console.log(newNAme);
+console.log(myName);
+
+let userOne = {
+  Name: "Karma",
+  adress: "narayanganj",
+};
+
+let userTwo = userOne;
+userTwo.Name = "samiya";
+
+console.log(userOne.Name);
+console.log(userTwo.Name);
