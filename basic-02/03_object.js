@@ -65,3 +65,43 @@ console.log(instructor);
     {},
     {}
 ]
+
+// *********************Object Destructure***********************
+const user = {
+  name: "Raihan",
+  age: 23,
+  country: "Bangladesh"
+};
+
+const {name,country} = user
+
+console.log(user.name);
+console.log(user.country);
+
+const student = {
+  id: 101,
+  profile: {
+    firstName: "Raihan",
+    lastName: "Ahmed"
+  }
+};
+
+const {profile:{firstName,lastName}}= student
+
+console.log(firstName);
+console.log(lastName);
+
+
+const data = {
+  userName: "rayhan09",
+  stats: {
+    followers: 120,
+    following: 80
+  }
+};
+
+const{userName : username, stats:{followers}} = data
+
+console.log(followers);
+console.log(username);
+
