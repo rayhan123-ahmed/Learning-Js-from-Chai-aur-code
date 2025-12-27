@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+   <ul>
+    <li class="language">javascript</li>
+   </ul>
+</body>
+   <script>
+    // add
+  function addLanguage(langName) {
+    const li = document.createElement('li');
+    li.textContent = langName;
+    document.querySelector('.language').appendChild(li);
+  }
+  addLanguage("python");
+  addLanguage("typescript");
+// edit
+  const secondLang = document.querySelector("li:nth-child(2)");
+  const newLi = document.createElement('li');
+  newLi.textContent = 'mojo';
+  secondLang.replaceWith(newLi);
+//   remove
+const lastLang = document.querySelector('li:nth-child(2)')
+lastLang.remove();
+</script>
+ 
+
+</html>
