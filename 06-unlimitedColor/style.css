@@ -1,0 +1,33 @@
+nav a{
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: #212121;
+    text-decoration: none;
+    border: 2px solid #212121;
+    transition: all 0.2s;
+}
+nav a:hover{
+   background-color: red;
+   color: #fff;
+}
+nav{
+    text-align: center;
+    padding: 1rem;
+ }
+ .container{
+    text-align: center;
+ }
+ button{
+     background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: #212121;
+    text-decoration: none;
+    border: 2px solid #212121;
+    transition: all 0.2s;
+ }
+ button:hover{
+   background-color: yellowgreen;
+   color: #fff;
+ }
