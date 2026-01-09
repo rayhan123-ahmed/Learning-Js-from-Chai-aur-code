@@ -12,15 +12,15 @@ const user = {
 // console.log(user.userDetails());
 
 
-function user1(usesrName,loginCount,isLoggedIn) {
+function users(usesrName,loginCount,isLoggedIn) {
     this.usesrName = usesrName
     this.loginCount = loginCount
     this.isLoggedIn = isLoggedIn
     // return this
 }
 
-const userOne = new  user1("rayhan",12,true)
-const userTwo = new user1("rifat",13,false)
+const userOne = new  users("rayhan",12,true)
+const userTwo = new users("rifat",13,false)
 
 console.log(userOne);
 console.log(userTwo);
