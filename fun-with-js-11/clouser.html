@@ -5,7 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clouser</title>
 </head>
-<body>
-    
+<body style="background-color: #313131;">
+       <button id="green">green</button>
+       <button id="orange">orange</button>
 </body>
+  <script>
+
+    //    function init(){
+    //     let name = 'rayhan'
+    //     let fatherName = 'anayet'
+    //    function innerOne(){
+    //     console.log(name);
+    //    }
+    //     function innerTwo() {
+    //         console.log(fatherName);
+    //         let brotherName = 'akash'
+    //         function innerThree() {
+    //             console.log(brotherName);  
+    //         }
+    //         innerThree()
+    //     }
+    //     innerOne()
+    //     innerTwo()
+    //    }
+    //    init()
+
+
+
+//    function createFunction() {
+//          const name = 'inner'
+//         function mainFunction() {
+//             console.log(name);
+            
+//         }
+//         return mainFunction;
+//    }
+
+//    const myFunc = createFunction()
+//    myFunc()
+
+
+
+  </script>
+  <script>
+    // no 1
+  // document.getElementById('green').onclick = function(){
+  //   document.body.style.backgroundColor = 'green'
+  // }
+  // document.getElementById('orange').onclick = function(){
+  //   document.body.style.backgroundColor = 'orange'
+  // }
+//  no 2
+  function clickHandlar(color) {
+     return function () {
+          document.body.style.backgroundColor =  `${color}`
+      }
+  }
+
+   document.getElementById('green').onclick = clickHandlar('green')
+   document.getElementById('orange').onclick = clickHandlar('orange')
+
+
+
+  </script>
 </html>
